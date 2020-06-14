@@ -7,9 +7,24 @@ using std::string;
 class Jugador
 {
 	public:
-		Jugador();
+		Jugador(string, int, string, int, int, int, int);
 		virtual bool ModoJuego(int)=0;
 		virtual bool Trampa()=0;
+		
+		string getNombre();
+		void setNombre(string);
+		int getAnioCursado();
+		void setAnioCursado(int);
+		string getCasa();
+		void setCasa(string);
+		int getNumeroCamista();
+		void setNumeroCamista(int);
+		int getPeso();
+		void setPeso(int);
+		int getReflejo();
+		void setReflejo(int);
+		int getMusculatura();
+		void setMusculatura(int);
 		~Jugador();
 	protected:
 		string nombre;
